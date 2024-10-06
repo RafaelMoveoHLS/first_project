@@ -5,9 +5,9 @@ This is a simple Flask-based web application that provides a health check route.
 ## Setup
 
 1. Clone the repository:
-   `git clone <repository_url>`
+   `git clone https://github.com/RafaelMoveoHLS/first_project.git`
 2. Navigate into the project directory:
-    `cd <project_directory>`
+    `cd https://github.com/RafaelMoveoHLS/first_project.git`
 3. Create and activate a virtual environment:
     `python3 -m venv venv`
     `source venv/bin/activate`
