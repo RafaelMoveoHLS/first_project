@@ -28,3 +28,4 @@ To run tests (after setting up pytest), use:
 - `app.py`: The main application file with a simple health check route.
 - `requirements.txt`: Dependencies for the project.
 - `.gitignore`: Ensures ignored files/folders (e.g., __pycache__, venv/).
+- `tests/test_main.py`: Test file for the health check route using pytest.
