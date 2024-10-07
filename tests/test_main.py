@@ -1,15 +1,11 @@
 import pytest
-import sys
-import os
-## Change the root directory of the test file to import app
+from fastapi.testclient import TestClient
 from app import app
 
-@pytest.fixture
-def client():
-    with app.test_client() as client:
-        yield client
+client = TestClient(app)
 
-def test_health_check(client):
-    response = client.get('/')
+def test_health_check():
+    response = client.get("/")
     assert response.status_code == 200
-    assert response.json == {'status': 'healthy'}
+    assert response.json() == {'status': 'healthy'}
+

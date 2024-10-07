@@ -7,14 +7,14 @@ This is a simple Flask-based web application that provides a health check route.
 1. Clone the repository:
    `git clone https://github.com/RafaelMoveoHLS/first_project.git`
 2. Navigate into the project directory:
-    `cd https://github.com/RafaelMoveoHLS/first_project.git`
+    `cd <project_directory>`
 3. Create and activate a virtual environment:
     `python3 -m venv venv`
     `source venv/bin/activate`
 4. Install the dependencies:
     `pip install -r requirements.txt`
 5. Run the application:
-    `python app.py`
+    `uvicorn app:app --reload`
 6. Access the health check endpoint:
     Open a browser or use a tool like curl to check the health status at:
     http://127.0.0.1:5000

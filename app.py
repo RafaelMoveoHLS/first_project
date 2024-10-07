@@ -1,10 +1,12 @@
-from flask import Flask, jsonify
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 
-app = Flask(__name__)
+app = FastAPI()
 
-@app.route('/', methods=['GET'])
+@app.get("/")
 def health_check():
-    return jsonify({'status': 'healthy'})
+    return JSONResponse(content={'status': 'healthy'})
 
-if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=5000)
