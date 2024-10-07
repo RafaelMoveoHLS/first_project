@@ -2,7 +2,6 @@ import pytest
 import sys
 import os
 ## Change the root directory of the test file to import app
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from app import app
 
 @pytest.fixture
