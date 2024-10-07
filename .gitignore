@@ -163,3 +163,4 @@ cython_debug/
 
 # VSCode local history
 .history/
+.vscode/
